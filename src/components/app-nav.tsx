@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 export function AppNav({
   className,
@@ -10,12 +11,18 @@ export function AppNav({
       {...props}
     >
       <h1 className="text-xl font-extrabold text-primary">MakerFlow</h1>
-      <a
-        href="/examples/dashboard"
+      <Link
+        to="/"
+        className="text-sm font-medium transition-colors hover:text-primary"
+      >
+        Dashboard
+      </Link>
+      <Link
+        to="/parts"
         className="text-sm font-medium transition-colors hover:text-primary"
       >
         Parts
-      </a>
+      </Link>
       <a
         href="/examples/dashboard"
         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"

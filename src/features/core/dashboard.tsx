@@ -1,43 +1,28 @@
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
 
-import "./App.css";
-
-import { Button } from "../components/ui/button";
+import { Button } from "../../components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "../components/ui/card";
+} from "../../components/ui/card";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "../components/ui/tabs";
-import { AppNav } from "../components/app-nav";
-import { Search } from "../components/search";
+} from "../../components/ui/tabs";
+import { AppNav } from "../../components/app-nav";
+import { Search } from "../../components/search";
 
-export const metadata: Metadata = {
-  title: "Dashboard",
-  description: "Example dashboard app built using the components.",
-};
-
-function App() {
+function Dashboard() {
   return (
     <>
       <div className=""></div>
       <div className="hidden flex-col md:flex">
-        <div className="border-b">
-          <div className="flex h-16 items-center px-4">
-            <AppNav className="mx-6" />
-            <div className="ml-auto flex items-center space-x-4">
-              <Search />
-            </div>
-          </div>
-        </div>
         <div className="flex-1 space-y-4 p-8 pt-6">
           <div className="flex items-center justify-between space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
@@ -187,4 +172,4 @@ function App() {
   );
 }
 
-export default App;
+export default Dashboard;
