@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { invoke } from "@tauri-apps/api/core";
-
 import { Button } from "../../components/ui/button";
 import {
   Card,
@@ -15,8 +12,6 @@ import {
   TabsList,
   TabsTrigger,
 } from "../../components/ui/tabs";
-import { AppNav } from "../../components/app-nav";
-import { Search } from "../../components/search";
 
 function Dashboard() {
   return (
